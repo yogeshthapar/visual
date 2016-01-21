@@ -1,0 +1,36 @@
+<div class="row">
+   <div class="col-sm-4 col-md-offset-5">
+      <h3>Visual BI</h3>
+   </div>
+</div>
+<div class="row">
+   <div class="col-sm-4 col-md-offset-4 login-form">
+
+      <div class="account-wall">
+         <img class="profile-img img-circle center-block"
+          src="images/login-page.png" alt="profile image" />
+         <form role="form" action="/login" method="post" >
+            <div class="form-group">
+               <div class="input-group login-input">
+                  <span class="input-group-addon glyphicon glyphicon-user" id="userLabel"></span>
+                  <input type="email" class="form-control" placeholder="Enter your emaild" aria-describedby="userLabel" name="username" required>
+               </div>
+               <div class="input-group login-input">
+                  <span class=" input-group-addon glyphicon glyphicon-lock" id="pwdLabel"></span>
+                  <input type="password" class="form-control" placeholder="Enter your password" aria-describedby="pwdLabel" name="password" required>
+               </div>
+               <button type="submit" class="btn btn-primary btn-lg btn-block login-input" id="btnSignin">Sign in</button>
+               <p class="login-error">
+                  <!-- display the error message here -->
+                  <% if (message) { %>
+                  <%= message %>
+                  <% } %>
+               </p>
+            </div>
+         </form>
+
+         <a href="#">Create new account</a>
+      </div>
+   </div>
+
+</div>

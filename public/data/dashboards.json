@@ -1,0 +1,15 @@
+[
+	{
+		"pageTitle": "1 Column Layout",
+		"tabID":"tab1"
+	},
+
+	{
+		"pageTitle": "2 Column Layout",
+		"tabID":"tab2"
+	},
+	{
+		"pageTitle": "3 Column Layout",
+		"tabID":"tab3"
+	}
+]

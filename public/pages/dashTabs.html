@@ -1,0 +1,24 @@
+<div class="row tabbable wrap" id="dashboards">
+   <ul class="nav nav-tabs tabSpaceCustom">
+     <li ng-repeat="dashboard in dashboards" ng-class="{active:isActiveTab(dashboard.tabId)}"
+             ng-click="onClickTab(dashboard)">
+       <a href="dashboard" data-toggle="tab">{{dashboard.tabTitle}}</a>
+     </li>
+   </ul>
+
+<div class="tab-content" id="dashboardsContent" ng-repeat="dashboardItem in dashboardItems">
+  <div class="tab-pane" id={{dashboardItem.tabId}} ng-init="index = 1" ng-repeat="row in dashboardItem.rows" ng-class="{active:isActiveTab(dashboardItem.tabId)}"
+          ng-click="onClickTab(dashboardItem)">
+    <div ng-class="row" id={{row.rowId}}>
+      <div class = "col-lg-{{row.colWidth}}" id="{{dashboardItem.tabId + row.rowId}}col{{$index+1}}" >
+        <div class = "panel panel-primary">
+          {{widget(row.widgetId, dashboardItem.tabId + row.rowId+"col"+($index+1))}}
+          <div class = "panel-heading" id = "header">
+            {{title}}
+          </div>
+        </div>  <!-- end of panel -->
+      </div> <!-- end of col -->
+    </div>  <!-- end of row -->
+  </div>  <!-- end of tab pane -->
+</div>
+        </div>

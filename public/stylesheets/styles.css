@@ -1,0 +1,126 @@
+/*
+Custom CSS
+=============
+*/
+body{
+  /*background-color:grey;*/
+}
+
+/* dark layout theme */
+
+.dark {
+  background-color: grey;
+}
+
+.dark .nav-tabs a {
+  color: black;
+}
+
+/* light layout theme */
+
+.light {
+  background-color: white;
+}
+
+.light .nav-tabs a {
+  color : #337ab7;
+}
+
+.navbar{
+   background-color: black;
+}
+
+#image{
+  margin-top: -10px;
+  border-radius: 15px;
+}
+.nav .open a{
+  background-color: #B22222;
+  color:white;
+}
+.dropdown-toggle{
+   color: white;
+}
+.nav .open a, .nav .open a:hover, .nav .open a:focus{
+  background-color:#B22222;
+}
+.tabSpaceCustom{
+  margin-bottom: 15px !important;
+}
+#searchBox {
+   width: 300px;
+}
+
+.wrap {
+   margin-top: 100px;
+}
+
+.login-error {
+   color: red;
+   font-weight: bold;
+}
+/*.row{
+  margin-bottom: 20px;
+}*/
+textarea{
+  margin-left: 15px !important;
+  margin-top: 10px;
+}
+#modalHeader{
+  text-align: center;
+}
+#submitButton {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.widget-border {
+  border: 1px solid #333;
+  margin: 1px;
+}
+.panel-heading {
+   text-align: center;
+   font-size: 24px;
+   font-family: 'Bree Serif', serif;
+}
+.hr-prop {
+  height: 0.5px;
+  background-color: #A4A4A4;
+}
+.btn{
+  /*margin-bottom: 100px;*/
+  /*margin-left: 20px;*/
+}
+.login-input {
+   margin-top: 20px;
+}
+
+.login-form {
+   margin-top: 50px;
+   background: #f7f7f7;
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.298039) 0px 2px 2px 0px;
+}
+#commentsText{
+  overflow-x: hidden;
+  height:550px;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
