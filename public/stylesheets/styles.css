@@ -54,7 +54,7 @@ body{
 
 .wrap {
    margin-top: 100px;
-}
+
 
 .login-error {
    color: red;
@@ -106,6 +106,7 @@ textarea{
   overflow-x: hidden;
   height:550px;
 }
+
 .tab-content > .tab-pane {
   display: block;
   height: 0;
@@ -115,7 +116,6 @@ textarea{
   display: block;
   height: auto;
 }
-
 
 /* --------------------------------------
    Media Queries

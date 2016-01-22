@@ -15,7 +15,7 @@ router.get('/:chartType', function(req, res, next) {
    } else {
       var filePath = path.join(__dirname, '../public/data/chartData/' + chartType + ".json");
       var chartJsonData = util.readFile(filePath);
-      res.send(chartJsonData);
+      res.json(chartJsonData);
    }
 });
 

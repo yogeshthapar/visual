@@ -1,4 +1,4 @@
-angular.module('visualApp')
+angular.module('visual')
 	.factory('gdpStackedBarChart', [function(){
 		var margin = {top: 10, right: 20, bottom: 100, left: 50},
 		 width = 400 - margin.left - margin.right,

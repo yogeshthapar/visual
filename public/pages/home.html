@@ -1,16 +1,12 @@
-<div ng-controller="homeController">
+<div>
   <header ng-include="'/pages/header.html'"></header>
   <div id="wrapper" >
-   <div class="overlay"></div>
   <!-- tabbable -->
-  <div id="page-content-wrapper" >
-   <button type="button" class="hamburger is-closed  " data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
+  <!-- <div id="page-content-wrapper" > -->
    <div class="container">
      <div class="row tabbable wrap" id="dashboards">
         <dash-tab></dash-tab>
         <dash-board></dash-board>
-
-<div ng-include="'/pages/menu.html'"> </div>
               </div>  <!-- end of panel -->
             </div> <!-- end of col -->
           </div>  <!-- end of row -->
