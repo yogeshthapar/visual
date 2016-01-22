@@ -1,23 +1,18 @@
-<div ng-controller="homePageController">
+<div ng-controller="homeController">
   <header ng-include="'/pages/header.html'"></header>
-
-  <div id="wrapper">
+  <div id="wrapper" >
    <div class="overlay"></div>
   <!-- tabbable -->
-  <div id="page-content-wrapper">
+  <div id="page-content-wrapper" >
    <button type="button" class="hamburger is-closed  " data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
    <div class="container">
-   <div class="row tabbable wrap" id="dashboards">
-    <tab-data tab-object= "tabs" fetch-tab-data ="fetchTab()" ng-repeat ="tab in tabs" ></tab-data>
+     <div class="row tabbable wrap" id="dashboards">
+        <dash-tab></dash-tab>
+        <dash-board></dash-board>
 
-
-
-  </div>
-  </div>
-  </div>
-
-  <!-- <% include ../partials/menu %>
-  <% include ../partials/commentsDialog %> -->
-
-  </div>
-</div>
+<div ng-include="'/pages/menu.html'"> </div>
+              </div>  <!-- end of panel -->
+            </div> <!-- end of col -->
+          </div>  <!-- end of row -->
+        </div>  <!-- end of tab pane -->
+    </div><!-- end of tab content -->

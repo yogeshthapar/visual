@@ -30,6 +30,7 @@ body{
    background-color: black;
 }
 
+
 #image{
   margin-top: -10px;
   border-radius: 15px;
@@ -105,6 +106,16 @@ textarea{
   overflow-x: hidden;
   height:550px;
 }
+.tab-content > .tab-pane {
+  display: block;
+  height: 0;
+  overflow-y: hidden;
+}
+.tab-content > .active {
+  display: block;
+  height: auto;
+}
+
 
 /* --------------------------------------
    Media Queries

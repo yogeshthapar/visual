@@ -12,7 +12,7 @@ router.get('/', [nocache], function(req, res, next) {
 });
 
 router.get('/tabs', function(req, res, next) {
-  var username = 'ashok.kumar6@wipro.com';
+  var username = 'partha.mukhargi@wipro.com';
   User.getTabs(username, function(data){
     var result = {
       dashboards: data.dashboards[0].tabs,

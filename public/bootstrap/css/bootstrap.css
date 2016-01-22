@@ -4155,11 +4155,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-bottom-color: #fff;
   }
 }
-.tab-content > .tab-pane {
+/*.tab-content > .tab-pane {
   display: none;
 }
 .tab-content > .active {
   display: block;
+}*/
+
+.tab-content > .tab-pane {
+  display: block;
+  height: 0;
+  overflow-y: hidden;
+}
+.tab-content > .active {
+  display: block;
+  height: auto;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;

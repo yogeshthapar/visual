@@ -3,7 +3,7 @@
       userDashboard: "dashboards",
       container: "#dashboards"
    };
-   widgetHandler(config);
+   //widgetHandler(config);
 
    $('.theme a').click(function() {
      var id = $(this).attr("id");

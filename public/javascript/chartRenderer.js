@@ -446,8 +446,6 @@ module.factory('ChartService', [function() {
                .style("text-anchor", "end")
                .text(function(d) { return d; });
         }
-
-
      });
   }
   return chartLoader;

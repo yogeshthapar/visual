@@ -1,0 +1,6 @@
+<ul class="nav nav-tabs tabSpaceCustom">
+  <li ng-repeat="dashboard in dashboards" ng-class="{active:isActiveTab(dashboard.tabId)}"
+      ng-click="onClickTab(dashboard)">
+    <a href="dashboard" data-toggle="tab">{{dashboard.tabTitle}}</a>
+  </li>
+</ul>
